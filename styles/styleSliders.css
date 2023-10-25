@@ -1,0 +1,57 @@
+
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background: linear-gradient(2deg, #e567ec, #746bf3, #5cb1f7);
+    animation: AnimationName 25s ease infinite;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -3;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.container-cover:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(252, 252, 252, 0.2);
+    position: absolute;
+    top:0;
+    left:0;
+   
+    z-index: -2;
+}
+
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+   
+}
+
+.container-info-cover h1{
+    font-size: 60px;
+    color: rgb(253, 253, 253);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
